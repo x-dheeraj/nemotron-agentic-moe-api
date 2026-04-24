@@ -1,0 +1,110 @@
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 0.75rem;
+    border-left: 4px solid var(--accent-color);
+    /* Defaults to orange/gold as seen in image for Brain Dump */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTitle {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.headerSubtitle {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-left: 0.5rem;
+}
+
+.header.brainDump {
+    border-left-color: #C2A855;
+    /* Gold/Yellowish */
+}
+
+.header.top3 {
+    border-left-color: #4B9EFF;
+    /* Blueish */
+}
+
+/* Brain Dump Title bg override if needed */
+.header.brainDump {
+    background-color: rgba(194, 168, 85, 0.1);
+}
+
+.header.top3 {
+    background-color: rgba(75, 158, 255, 0.1);
+}
+
+
+.taskList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.taskItem:hover {
+    opacity: 0.8;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--text-secondary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.checkbox.checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.label {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    width: 100%;
+}
+
+.label::placeholder {
+    color: var(--text-tertiary);
+}

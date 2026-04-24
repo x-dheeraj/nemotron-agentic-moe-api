@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    padding: 1rem;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.label {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.textarea {
+    flex: 1;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    resize: none;
+    line-height: 1.5;
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.date {
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+}
+
+.saveBtn {
+    background-color: var(--success-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.saveBtn:hover {
+    opacity: 0.9;
+}

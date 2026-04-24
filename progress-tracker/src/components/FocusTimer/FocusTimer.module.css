@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-left: auto;
+    /* Push to right if in flex container */
+}
+
+.timerDisplay {
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--accent-color);
+}
